@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avinash-Developer Portfolio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      .proje a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(128, 128, 240);
+        font-size: 1.01rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 23px 0px;
+      }
+      .firstSection > div {
+        width: 30%;
+        margin: 40px 0px;
+      }
+      .leftSection {
+        font-size: 2.2rem;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(144, 81, 203);
+      }
+      #element {
+        color: rgb(144, 81, 203);
+      }
+      main hr {
+        border: 0;
+        margin: 40px 80px;
+        height: 1.2px;
+        background-color: #9c97f1;
+      }
+      .secondSection {
+        margin: auto;
+        max-width: 80vw;
+        height: 600px;
+      }
+      .hri{
+        height: 1000px;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .text-gray {
+        color: gray;
+      }
+      .linee {
+        position: relative;
+        top: 60px;
+        height: 280px;
+        width: 320px;
+        border: 1px solid white;
+        border-radius: 25px;
+        transition: width 2s, height 2s, background-color 2s, rotate 2s;
+      }
+      .exp {
+        display: flex;
+        justify-content: space-around;
+      }
+      .box img {
+        margin-left: 100px;
+        margin-top: 10px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+      .linee:hover {
+        background-color: rgb(144, 81, 203);
+      }
+      .path {
+        position: relative;
+        top: 150px;
+      }
+      .logos {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-top: 20px;
+      }
+      .skill:hover {
+        background-color: rgb(144, 81, 203);
+      }
+      .logo img {
+        margin-left: 125px;
+        height: 100px;
+        width: 100px;
+      }
+      .skills {
+        position: relative;
+        top: 55px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .skill {
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        border: 2px solid white;
+        transition: width 2s, height 2s, background-color 2s, rotate 2s;
+      }
+      .sett img{
+        margin-top: 10px;
+        height: 450px;
+      }
+      .settt{
+        display: flex;
+        justify-content: space-around;
+      }
+      .abouut{
+        max-width: 500px;
+      }
+      .proje{
+        position: relative;
+        top: 50px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .proje div{
+        border-radius: 10px;
+        border: 2px solid white;
+        height: 250px;
+        width: 350px;
+        transition: width 2s, height 2s, background-color 2s, rotate 2s;
+      }
+      .proje div:hover{
+        background-color: rgb(144, 81, 203); 
+      }
+      .ht{
+        height: 500px;
+      }
+      .handles{
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .handles div{
+        height: 100px;
+        width: 100px;
+        border: 2px solid white;
+        border-radius: 50%;
+      }
+      .handles div img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      }
+      footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      #scrollToTopBtn {
+        position: relative;
+        top: 110px;
+        left: 1250px;
+        background-color: black;
+        border: none;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 48px;
+        width: 48px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Avinash's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home" id="home-btn">Home</a></li>
+            <li><a href="#about" id="about-btn">About</a></li>
+            <li><a href="#experience" >Experience</a></li>
+            <li><a href="#skills" >Skills</a></li>
+            <li><a href="#projects" >Projects</a></li>
+            <li><a href="#contact" >Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection" id="home">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Avinash</span>
+          <div>
+            and I am a passionate
+            <div></div>
+            <span id="element"></span>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img
+            src="https://cdn0.iconfinder.com/data/icons/fillicons-information-technology/1550/programmer_software_developer-1024.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection sett" id="about">
+        <div class="text-gray">Who am I?</div>
+        <h1>About Me</h1>
+        <div class="settt">
+          <img src="./profile.jpg" alt="">
+        <div class="abouut"><p style="font-size: 18px; margin: 25px 5px; text-align: center">Hello! I'm Avinash Gupta, currently pursuing my B.Tech in Electronics and Communication Engineering (ECE) at IIT Guwahati. As a second-year student, I am passionate about exploring the intersection of technology and innovation. I have a keen interest in web development, digital marketing strategies, and software development. My academic pursuits have equipped me with a solid foundation in electronics and communication systems, while my extracurricular activities, such as my role as a Growth Manager at the Students' Web Committee (SWC) and my internship at Noqs Digital, have enhanced my skills in strategic planning and digital marketing. I am eager to contribute my skills and knowledge to projects that drive meaningful impact and innovation.</p></div>
+        </div>
+        </section>
+      <hr>
+      <section class="secondSection" id="experience">
+        <div class="text-gray">What I have done so far</div>
+        <h1>Work Experience</h1>
+        <div class="exp">
+          <div class="linee">
+            <div class="box">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUrFtg0GAQkSHZnkJuWTCNvgYyYD-5zvK_mtKWejeruvRqw_Hu9Mlj4xlXtqyBKAQgPylhP0ugpjj4PF6QtXZdbxOs-IR8oZKxAvDPiVmz_-GlJx3mDSn2hdy7D4UScM1foT3jU7UZO3w8bNyqJSjx-JZjpE-hpyy0C9XvfWUrzaW2eZWI0rCdieMcZw/s959/ecellll.PNG"
+                alt=""
+              />
+              <p style="text-align: center">Senior Executive E-CELL IITG</p>
+              <p style="font-size: 11.7px; margin: 0px 5px; text-align: center">
+                In April 2024, I joined the E-Cell at IIT Guwahati, immersing
+                myself in a community that fosters innovation and
+                entrepreneurship. This experience has allowed me to collaborate
+                with passionate peers, attend insightful workshops, and expand
+                my network. It has been instrumental in developing my
+                entrepreneurial skills and mindset.
+              </p>
+            </div>
+          </div>
+          <div class="linee box">
+            <img
+              src="https://play-lh.googleusercontent.com/w0scr6QhQ8YRcp5bnQ1HRuOUWA0ZE5TlN2Pt66TYjCDZZ5-kxUqPy_RnoJfg-jhFuBg"
+              alt=""
+            />
+            <p style="text-align: center">Juinor Growth Manager SWC IITG</p>
+            <p style="font-size: 11.7px; margin: 0px 5px; text-align: center">
+              In April 2024, I joined the Students' Web Committee (SWC) at IIT
+              Guwahati as a Growth Manager. In this role, I have driven the
+              growth and engagement of our web platforms, optimized content, and
+              implemented strategic initiatives to enhance our digital presence.
+              This experience has honed my leadership and technical skills in
+              web development.
+            </p>
+          </div>
+          <div class="linee box">
+            <img
+              src="https://media.licdn.com/dms/image/C4D0BAQEkY3DMLex7dA/company-logo_200_200/0/1676725145933/noqs_digital_logo?e=1726704000&v=beta&t=b_AFI6IG2kSM0LyV5yeGP9f8GVuK_lTiQOuIo4Gnl9c"
+              alt=""
+            />
+            <p style="text-align: center">Growth and Strategy Intern at NOQs</p>
+            <p style="font-size: 11.7px; margin: 0px 5px; text-align: center">
+              In April 2024, I joined Noqs Digital as a Growth and Strategy
+              Intern. During this time, I contributed to market analysis,
+              identified growth opportunities, and implemented data-driven
+              strategies. This experience has enhanced my analytical skills and
+              strategic thinking in digital marketing.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection hri" id="skills">
+        <div class="text-gray">What I learnt so far</div>
+        <h1>Skills</h1>
+        <div class="skills"> 
+          <div class="skill">
+            <div class="logos logo">
+              <img
+                src="https://cdn0.iconfinder.com/data/icons/social-network-9/50/22-1024.png"
+                alt=""
+              />
+            </div>
+            <p style="font-size: 11.7px; margin: 25px 5px; text-align: center">Proficient in HTML, with experience in creating and structuring web content effectively. Skilled in using HTML5 to develop responsive and accessible web pages, ensuring proper semantics and SEO optimization. Capable of integrating multimedia elements, forms, and interactive features to enhance user experience.</p>
+          </div>
+          <div class="skill">
+            <div class="logos logo">
+              <img
+                src="https://logospng.org/download/css-3/logo-css-3-2048.png"
+                alt=""
+              />
+            </div>
+            <p style="font-size: 11.7px; margin: 25px 5px; text-align: center">Proficient in CSS, with expertise in designing and styling responsive web pages. Skilled in using CSS3 features such as Flexbox, Grid, and animations to create visually appealing and user-friendly interfaces. Experienced in implementing custom layouts, ensuring cross-browser compatibility, and optimizing styles for performance and accessibility.</p>
+          </div>
+          <div class="skill">
+            <div class="logos logo">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/027/127/560/original/javascript-logo-javascript-icon-transparent-free-png.png"
+                alt=""
+              />
+            </div>
+            <p style="font-size: 11.7px; margin: 25px 5px; text-align: center">Proficient in JavaScript, with experience in developing interactive and dynamic web applications. Skilled in using ES6+ features to manipulate the DOM, handle events, and manage asynchronous operations. Familiar with popular frameworks and libraries such as React and Vue.js for building modern user interfaces. Capable of implementing client-side validations, RESTful API integrations.</p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="skills">
+          <div class="skill">
+            <div class="logos logo">
+              <img
+                src="https://1.bp.blogspot.com/-xH6iGgyR4bs/Xjbdug1pf2I/AAAAAAAAAQ0/Re3dhrs-cNso9C3Jq6EutOvlOmOQr0TVwCLcBGAsYHQ/s1600/node-js-512.png"
+                alt=""
+              />
+            </div>
+            <p style="font-size: 11.7px; margin: 25px 5px; text-align: center">Proficient in Node.js, with experience in building scalable and efficient server-side applications. Skilled in using Express.js for routing, middleware management, and RESTful API development. Familiar with database integration using MongoDB, as well as ORM libraries like Mongoose. Capable of deploying applications using cloud platforms like AWS.</p>
+          </div>
+          <div class="skill">
+            <div class="logos logo">
+              <img
+                src="https://gss-technology.com/wp-content/uploads/2021/07/round8.png"
+                alt=""
+              />
+            </div>
+            <p style="font-size: 11.7px; margin: 25px 5px; text-align: center">Proficient in Python programming language, with experience in developing applications and scripts for various purposes. Skilled in utilizing Python for data analysis, automation tasks,Numpy and Pandas. Familiar with object-oriented and functional programming paradigms in Python, and capable of writing clean, efficient, and maintainable code.</div>
+            </p>
+          <div class="skill">
+            <div class="logos logo">
+              <img
+                src="https://th.bing.com/th/id/OIP.jBhO-U9FbAoSGKgycWRl8gAAAA?rs=1&pid=ImgDetMain"
+                alt=""
+              />
+            </div>
+            <p style="font-size: 11.7px; margin: 25px 5px; text-align: center">Proficient in C++ programming language, with experience in developing robust and efficient software applications. Skilled in object-oriented programming principles, data structures, and algorithms. Capable of implementing complex logic, optimizing performance, and ensuring memory management. Experienced in using C++ for system-level programming,    and high-performance computing.</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="secondSection ht" id="projects">
+        <div class="text-gray">Have a look at my Projects</div>
+        <h1>Projects</h1>
+        <div class="proje">
+           <a href="https://github.com/aeyazadil/even-semester-project" target="_blank"><div class="even-sem">
+            <h1 style="font-size: 25px; text-align:center; margin-top: 10px;"">JoSAA Portal Analysis</h1>
+            <p style="font-size: 14px; margin: 25px 5px; text-align: center">This is one of the project released by CODING CLUB IIT GUWAHATI. I had done the frontend part of this project, rest of my teammates had done other parts like backend part, Data Analysis part,etc. In frontend of this project there is dynamic changing of option avialable depending upon previous choice of the user. </p>
+          </div> </a>
+          <a href="https://github.com/laladwesh/node-js-urlshort" target="_blank"><div class="url-shortner">
+            <h1 style="font-size: 25px; text-align:center; margin-top: 10px;"">URL Shortner NODE JS</h1>
+            <p style="font-size: 14px; margin: 25px 5px; text-align: center">This was the first project I made during learning of NODE JS. This is a Statefull Project in NodeJs to short any long url you can use this. Along with this box I have attached the repository link to run this project , copy the link and Clone git repository in VS Code of your device runn npm init in your terminal and then run npm start. </p>
+          </div> </a>
+          <a href="https://laladwesh.github.io/rockpaperscissors/"target="_blank"><div class="rps">
+            <h1 style="font-size: 25px; text-align:center; margin-top: 10px;"">Rock Paper Scissor</h1>
+            <p style="font-size: 14px; margin: 25px 5px; text-align: center">This is one of the project I made during learning of JavaScript. In this project you can Play Rock Paper and Scissor with computer like the way you play LUDO with computer. Try playing this game at least once; you will enjoy it a lot. And one more thing, it's not easy to make the computer lose in this game. If you think you can win the click on this box once.</p>
+          </div> </a>
+        </div>
+      </section>
+      <hr>
+      <section class="secondSection" style="height: 339px;" id="contact">
+        <div class="text-gray">How to Contact Me?</div>
+        <h1>Contact Me</h1>
+        <div class="handles">
+          <a href="https://www.instagram.com/chholekulche_/" target="_blank"><div class="insta">
+            <img src="https://freelogopng.com/images/all_img/1658588965instagram-logo-png-transparent-background.png" alt="">
+          </div> </a>
+          <a href="https://github.com/laladwesh" target="_blank"><div class="github">
+            <img src="https://th.bing.com/th/id/OIP.yWNibBRepmC6fO7mZnicCgAAAA?rs=1&pid=ImgDetMain" alt="">
+          </div> </a>
+          <a href="mailto:g.avinash@iitg.ac.in"><div class="mailid" target="_blank">
+            <img src="https://th.bing.com/th/id/OIP._3UJTYrm4CBxwBB2VJdY6QHaER?rs=1&pid=ImgDetMain" alt="">
+          </div></a>
+          <a href="https://www.linkedin.com/in/avinash-gupta-58171828a/" target="_blank"><div class="linkedin">
+            <img src="https://th.bing.com/th/id/OIP.bhVPgAcuDxNBBew1WZ10pgHaHa?rs=1&pid=ImgDetMain" alt="">
+          </div></a>
+        </div>
+        <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+      </section>
+      <footer>
+        <p>Created By Avinash Gupta @2024 All Rights reserved... </p>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "FrontEnd Developer",
+          "BackEnd Developer",
+          "Competitive Coder",
+          "Graphic Designer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      
+      var rootElement = document.documentElement;
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+    </script>
+  </body>
+</html>
